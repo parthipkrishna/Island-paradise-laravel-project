@@ -1,87 +1,183 @@
-# Ignore Node.js dependencies
-node_modules/
+# Laravel specific .gitignore file
 
-# Ignore Composer dependencies
+# Node artifact files
+/node_modules/
+
+# Laravel specific vendor directory
 /vendor/
 
-# Ignore environment and sensitive configuration files
-# Ignore all environment files
+# Environment files
 .env
-!.env.example  # Keep this as a reference file
-!.env.sample   # Keep this if you want to share a sample config
+*.env.php
+.env.backup
 
-# Ignore IDE/editor-specific files
-.vscode/
+# Laravel specific directories
+
+# IDE configuration files
 .idea/
-*.sublime-project
-*.sublime-workspace
+.sublime-
 
-# Ignore compiled & cache files
-bootstrap/cache/
-storage/logs/
-storage/framework/*
-!storage/framework/.gitignore
-storage/app/public/*
-!storage/app/public/.gitignore
+# Composer dependencies
+/vendor/
+/composer.lock
 
-# Ignore system files
+# PHPStorm
+*.iml
+*.ipr
+*.iws
+
+# Cache and debug files
+*.log
+*.cache
+*.bak
+*.tmp
+*.swp
+*.lock
+*.sqlite
+
+# PHPUnit results
+phpunit.xml
+phpunit.xml.dist
+phpunit.result.cache
+
+# Coverage reports
+coverage/
+/build/
+
+# NPM/Yarn
+node_modules/
+public/hot
+npm-debug.log
+yarn-error.log
+
+# OS-generated files
 .DS_Store
 Thumbs.db
-*.bak
+
+# Package files
+*.jar
+*.war
+*.zip
+*.tar
+*.gz
+
+# MacOS files
+.AppleDouble
+.LSOverride
+Icon\r
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor and IDE files
+*.vscode/
+*.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and databases
+Homestead.yaml
+Homestead.json
+.vagrant/
+
+# Docker
+.dockerignore
+Dockerfile
+*.dockerfile
+
+# CI/CD configuration
+.gitlab-ci.yml
+.circleci/
+.travis.yml
+
+# Debugger files
+.vscode/
+*.launch
+*.tasks
+*.njsproj
+*.suo
+.ntvs
+*.njsproj.user
+*.sln
 *.swp
-*.swo
 
-# Ignore Laravel log files
+
+
+# Cache and generated files
 *.log
+*.cache
+*.bak
+*.tmp
+*.lock
+*.sqlite
+*.sql
 
-# Ignore Laravel session files
-storage/framework/sessions/*
-!storage/framework/sessions/.gitignore
+# Build artifacts
+/build/
+/dist/
 
-# Ignore compiled classes
-.phpunit.result.cache
-.phpstorm.meta.php
-.php-cs-fixer.cache
+# Custom Laravel files
 
-# Ignore Laravel debugbar files
-storage/debugbar/
+/public/hot
+/node_modules
+/nova/
+/vendor/
 
-# Ignore Laravel Nova
-nova/
+# IDE/workspace
+*.vscode
+*.idea
 
-# Ignore tests coverage reports
+# Miscellaneous
+*.bak
+*.old
+*.orig
+*.rej
+*.tar.gz
+
+# Security keys
+*.key
+*.crt
+*.pem
+
+# Logs and debugging
+*.log
+*.out
+*.err
+
+# Framework specific files
+/storage/framework/cache/
+/storage/framework/views/
+/storage/framework/sessions/
+
+
+# Coverage results
 coverage/
 
-# Ignore deployment-related files
-homestead.json
-homestead.yaml
-vagrantfile
-
-# Ignore Laravel Mix files
-public/hot
-public/storage
+# Laravel Mix
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-mix-manifest.json
-npm-shrinkwrap.json
-yarn.lock
-pnpm-lock.yaml
 
-# Ignore Composer lock file (optional, depends on your workflow)
-composer.lock
+# Serverless
+.serverless/
 
-# Ignore docker-related files
-docker-compose.override.yml
-.docker/
+# System generated files
+*.swp
+*.swo
 
-# Ignore Laravel storage directory (except necessary placeholders)
-storage/app/*
-!storage/app/.gitignore
-storage/framework/cache/*
-!storage/framework/cache/.gitignore
-storage/framework/views/*
-!storage/framework/views/.gitignore
-storage/logs/*
-!storage/logs/.gitignore
+# Misc
+*.seed
+*.bak
+*.temp
+*.sql
+*.sql.gz
+*.sqlite
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.tar
+*.zip
+*.rar
+*.7z
