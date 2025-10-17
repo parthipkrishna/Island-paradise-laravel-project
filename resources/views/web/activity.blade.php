@@ -37,7 +37,7 @@
           <main class="b-post-group_main px-5">
             <div class="js-scroll-content">
             <section class="b-post b-post-2 row" data-aos="fade-left">
-                <div class="entry-media col-lg-6"><img class="img-scale" src="{{asset('assets/img/fishing.png' )}}" alt="photo"/></div>
+                <div class="entry-media col-lg-6"><img class="img-scale" src="{{asset('assets/img/fishing.webp' )}}" alt="photo"/></div>
                 <div class="entry-main col-lg-6">
                   <div class="entry-header">
                      <h2 class="entry-title">PROCURING AND SELLING OF MARINE PRODUCTS</h2>
